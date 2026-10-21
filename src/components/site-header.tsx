@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 
 const nav = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -17,7 +18,7 @@ export function SiteHeader() {
           {site.name}
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
-          <nav className="flex items-center gap-4 text-sm text-muted-foreground sm:gap-6">
+          <nav className="hidden items-center gap-6 text-sm text-muted-foreground sm:flex">
             {nav.map((item) => (
               <a
                 key={item.href}

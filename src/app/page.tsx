@@ -18,7 +18,7 @@ import { site } from "@/lib/site";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
+    <h2 className="text-sm font-medium tracking-wide text-primary uppercase">
       {children}
     </h2>
   );
